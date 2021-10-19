@@ -97,10 +97,12 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+.navbar .logo a img{
+    /* color: #fff; */
+    /* font-size: 35px;
+    font-weight: 600; */
+    width: 125px; 
+    height: 80px;
 }
 .navbar .logo a span{
     /* color: crimson; */
@@ -273,11 +275,15 @@ section .title::after{
     color:#fff;
     background: #111;
 }
-.services .title::before,
+.services a{
+    color: #fff;
+}
+.services  .title::before,
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
+
+.services  .title::after,
 .teams .title::after{
     background: #111;
     content: "Que proporciono";
@@ -460,7 +466,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "Comunicarse";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -548,7 +554,7 @@ section .title::after{
   flex-wrap: nowrap;
   /* background: crimson; */
   background: #5472d3;
-  border: 2px solid crimson;
+  border: 2px solid #5472d3+0;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
